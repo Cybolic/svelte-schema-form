@@ -1,5 +1,7 @@
 # Svelte Schema Form
 
+Forked from `@restspace/svelte-schema-form` to add better CSS layout options and better support for string formats.
+
 This is a Svelte implementation of a form generator from JSON Schema. It supports subforms, lists with reordering of items, custom renderer components, and customisable CSS skinning separating layout and look-and-feel.
 
 JSON Schema is a powerful validation/type definition language for JSON data. See this for more information on [JSON Schema](https://cswr.github.io/JsonSchema/spec/introduction/)
@@ -8,14 +10,14 @@ JSON Schema is a powerful validation/type definition language for JSON data. See
 
 Install with npm
 
-	npm install @restspace/svelte-schema-form
+	npm install svelte-schema-form
 
 Use in a component
 
 	<script>
-	  import { SubmitForm } from '@restspace/svelte-schema-form';
-	  import '@restspace/svelte-schema-form/css/layout.scss';
-	  import '@restspace/svelte-schema-form/css/basic-skin.scss';
+	  import { SubmitForm } from 'svelte-schema-form';
+	  import 'svelte-schema-form/css/layout.scss';
+	  import 'svelte-schema-form/css/basic-skin.scss';
 
 	  let schema = {
 		  type: "object",
@@ -65,7 +67,7 @@ The `SubmitForm` component manages validation of the entered data using the full
 ### SchemaForm
 A group of based on a schema, no submit functionality
 
-    import {SchemaForm} from "@restspace/svelte-schema-form";
+    import {SchemaForm} from "svelte-schema-form";
 
 	<SchemaForm
 	  schema // REQUIRED: JSON schema as an object
@@ -81,7 +83,7 @@ A group of based on a schema, no submit functionality
 ### SubmitForm
 An HTML form with a submit button and a submit flow
 
-    import {SubmitForm} from "@restspace/svelte-schema-form";
+    import {SubmitForm} from "svelte-schema-form";
 
 	<SubmitForm
 	  schema // REQUIRED: JSON schema as an object
