@@ -68,6 +68,7 @@
 			time: String,
 			"date-time": String,
 			date: String,
+			uri: String,
 			number: Number,
 			integer: Number,
 			boolean: Boolean,

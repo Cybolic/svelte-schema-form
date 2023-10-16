@@ -1,7 +1,7 @@
 import { camelToTitle } from "../utilities.js";
 
 export function editorForSchema(schema: any): string {
-	let type = schema['type'];
+    let type = schema['type'];
     if (schema['enum'])
         type = "enum";
     if (schema['format'])
@@ -14,6 +14,7 @@ export function editorForSchema(schema: any): string {
         case "string-date-time":
         case "string-date":
         case "string-time":
+        case "string-uri":
         case "string-email":
         case "string-password":
         case "number-currency":

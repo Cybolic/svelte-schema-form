@@ -12,7 +12,8 @@
 			   : editor === "email" ? "email"
 			   : editor === "time" ? "time"
 			   : editor === "date-time" ? "datetime-local"
-			   : editor === "date" ? "date" : "text";
+			   : editor === "date" ? "date"
+			   : editor === "uri" ? "url" : "text";
 	}
 </script>
 
