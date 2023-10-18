@@ -88,6 +88,7 @@
 		componentContext,
 		pathChanged,
 		validationErrors,
+		"data-hidden": schema.hidden,
 		containerParent: "none",
 		containerReadOnly: schema.readOnly || false,
 		showErrors,
@@ -143,3 +144,4 @@
 </script>
 
 <SubSchemaForm {params} {value} bind:schema />
+

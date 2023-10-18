@@ -15,6 +15,7 @@
 		name={params.path.join('.')}
 		value={value} 
 		disabled={schema.readOnly || params.containerReadOnly}
+		data-hidden={schema.hidden}
 		on:change={ev => params.pathChanged(params.path, ev.currentTarget.value || undefined)}>
 		<option></option>
 		{#each enumVals as enumVal, idx}

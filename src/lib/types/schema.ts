@@ -2,12 +2,12 @@ import { camelToTitle } from "../utilities.js";
 
 export function editorForSchema(schema: any): string {
     let type = schema['type'];
+    if (schema['hidden'])
+        type = "hidden";
     if (schema['enum'])
         type = "enum";
     if (schema['format'])
         type += "-" + schema['format'];
-    if (schema['hidden'])
-        type = "hidden";
     if (schema['editor'])
         type = schema['editor'];
     switch (type) {

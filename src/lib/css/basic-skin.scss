@@ -10,6 +10,15 @@ form.svelte-schema-form {
 		font-family: 'Montserrat', sans-serif;
 	}
 
+	*[data-hidden="true"] {
+		visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    position: absolute;
+    pointer-events: none;
+	}
+
 	.collapser {
 		background-size: 2rem 2rem;
 		background-position: 50% 35%;

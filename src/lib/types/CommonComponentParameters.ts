@@ -11,6 +11,7 @@ export interface CommonComponentParameters {
 	value: any,
 	validationErrors: ValidationErrors,
 	required?: boolean,
+	"data-hidden": boolean,
 	containerParent: "none" | "array" | "object",
 	containerReadOnly: boolean,
 	showErrors: boolean,
